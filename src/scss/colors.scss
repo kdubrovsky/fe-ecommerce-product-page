@@ -1,0 +1,20 @@
+$gray100: #1d2026;
+$gray500: #69707d;
+$gray600: #b6bcc8;
+$gray700: #c3cad9;
+$gray800: #e4e9f2;
+$gray900: #f6f8fd;
+
+$accent100: #ff7e1b;
+$accent500: #ffab6a;
+$accent900: #ffeee2;
+
+$white: #ffffff;
+$white75opacity: rgba($white, 0.75);
+$white50opacity: rgba($white, 0.5);
+
+$black: #000000;
+$black75opacity: rgba($black, 0.75);
+
+$accentShadow: 0px 20px 50px -20px $accent100;
+$popupShadow: 0px 20px 50px -20px rgba($gray100, 0.5);
