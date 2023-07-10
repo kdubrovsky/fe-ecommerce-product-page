@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "title": "Collections",
+        "url": "/collections"
+    },
+    {
+        "id": 0,
+        "title": "Men",
+        "url": "/catalog/men"
+    },
+    {
+        "id": 0,
+        "title": "Women",
+        "url": "/catalog/women"
+    },
+    {
+        "id": 0,
+        "title": "About",
+        "url": "/about"
+    },
+    {
+        "id": 0,
+        "title": "Contact",
+        "url": "/contact"
+    }
+]
