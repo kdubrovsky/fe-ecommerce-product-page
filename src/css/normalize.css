@@ -45,3 +45,8 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+
+a {
+    display: block;
+    text-decoration: none;
+}
