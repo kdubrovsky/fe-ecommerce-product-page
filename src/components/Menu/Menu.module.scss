@@ -1,0 +1,32 @@
+@use "../../scss/colors.scss";
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+
+    font-size: 15px;
+    line-height: 1.733;
+    height: 100%;
+
+    li {
+        padding: 41px 0;
+        border-bottom: 4px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: colors.$accent100;
+
+        }
+    }
+
+    a:link,
+    a:visited {
+        color: colors.$gray500;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: colors.$gray100;
+    }
+}

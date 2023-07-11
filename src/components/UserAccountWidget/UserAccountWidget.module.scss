@@ -1,0 +1,26 @@
+@use "../../scss/colors.scss";
+
+.account {
+    &__link {
+        &:link,
+        &:visited {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 0px 2px colors.$accent100 inset;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: inherit;
+    }
+}

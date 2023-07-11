@@ -1,0 +1,22 @@
+@use "../../scss/colors.scss";
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid colors.$gray800;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 56px;
+}
+
+.widgets {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+}

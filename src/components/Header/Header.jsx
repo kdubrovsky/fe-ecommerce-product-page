@@ -3,14 +3,26 @@ import Menu from "../Menu/Menu";
 import CartWidget from "../CartWidget/CartWidget";
 import UserAccountWidget from "../UserAccountWidget/UserAccountWidget";
 
-export default function Header() {
+import Container from "../Container/Container";
+
+
+import css from './Header.module.scss';
+
+export default function Header({ menuData, userData, cartProducts }) {
     return (
         <header>
-            <h2>Header</h2>
-            <Logotype />
-            <Menu />
-            <CartWidget />
-            <UserAccountWidget />
+            <Container>
+                <div className={css.wrapper}>
+                    <nav className={css.navigation}>
+                        <Logotype />
+                        <Menu menuData={menuData} />
+                    </nav>
+                    <div className={css.widgets}>
+                        <CartWidget cartProducts={cartProducts} />
+                        <UserAccountWidget userData={userData} />
+                    </div>
+                </div>
+            </Container>
         </header>
     );
 }
