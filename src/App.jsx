@@ -8,11 +8,24 @@ import Container from "./components/Container/Container";
 
 import menuData from "./data/menu.json";
 import userData from "./data/user.json";
+import productData from "./data/product.json";
+
+const galleryData = productData.images;
 
 
 export default function App() {
 
-    const [cartProducts, setCartProducts] = useState([]);
+    const [cartProducts, setCartProducts] = useState({});
+
+    const addProductToCart = (productId, value) =>
+        setCartProducts(prev => (
+            {
+                ...prev,
+                [productId]: (productId in prev) ? prev[productId] + value : value
+            }
+        ));
+
+    console.log('Cart items:', cartProducts);
 
     return (
         <>
@@ -24,8 +37,13 @@ export default function App() {
             <main>
                 <Container>
                     <ProductSection>
-                        <ProductGallery />
-                        <ProductInformation />
+                        <ProductGallery
+                            galleryData={galleryData}
+                        />
+                        <ProductInformation
+                            productData={productData}
+                            onAddToCart={addProductToCart}
+                        />
                     </ProductSection>
                 </Container>
             </main>

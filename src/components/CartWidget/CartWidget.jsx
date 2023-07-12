@@ -1,10 +1,10 @@
 import css from './CartWidget.module.scss';
 
-import { ReactComponent as CartIcon } from '../../assets/images/icon-cart.svg'
+import Icon from '../Icon/Icon';
 
 export default function CartWidget({ cartProducts }) {
 
-    const itemsCount = cartProducts.length;
+    const itemsCount = Object.keys(cartProducts).length;
     const itemsCounter = itemsCount ?
         (<div className={css.cart__counter}>
             {itemsCount}
@@ -14,7 +14,7 @@ export default function CartWidget({ cartProducts }) {
     return (
         <div className={css.cart}>
             <a className={css.cart__link} href="/cart">
-                <CartIcon />
+                <Icon name="cart" size="24" />
                 {itemsCounter}
             </a>
         </div >

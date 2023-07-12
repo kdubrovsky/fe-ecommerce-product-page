@@ -32,7 +32,8 @@ select {
     font: inherit;
 }
 
-select {
+select,
+input {
     appearance: none;
 }
 

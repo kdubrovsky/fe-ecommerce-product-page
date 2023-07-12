@@ -1,8 +1,9 @@
 .product {
     display: grid;
-    padding: 90px 48px;
-    min-height: calc(100vh - 113px);
-    border: 1px solid rgb(255, 0, 195); // debug styling
     grid-template-columns: 1fr minmax(440px, 1fr);
+    align-items: center;
     gap: 125px;
+    padding: 90px 48px;
+
+    min-height: calc(100vh - 113px);
 }

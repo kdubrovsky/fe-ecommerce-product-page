@@ -1,0 +1,76 @@
+@use "../../scss/colors.scss";
+
+.brand {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 27px;
+
+    color: colors.$accent100;
+}
+
+.title {
+    font-size: 44px;
+    line-height: 1.091;
+    font-weight: 700;
+    margin-bottom: 32px;
+
+    color: colors.$gray100;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 400;
+    margin-bottom: 24px;
+
+    color: colors.$gray500;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.actual {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.newPrice {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: colors.$gray100;
+}
+
+.oldPrice {
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 700;
+    color: colors.$gray600;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+
+    border-radius: 6px;
+    padding: 4px 8px;
+
+    color: colors.$accent100;
+    background-color: colors.$accent900;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+}

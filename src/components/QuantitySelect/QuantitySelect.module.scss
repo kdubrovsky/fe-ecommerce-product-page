@@ -1,0 +1,48 @@
+@use "../../scss/colors.scss";
+
+.quantitySelect {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.changeQuantityButton {
+    color: colors.$accent100;
+    background-color: colors.$gray900;
+    padding: 16px 12px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.3s;
+        color: colors.$accent500;
+        background-color: colors.$gray800;
+    }
+
+    &:active {
+        color: colors.$accent100;
+        background-color: colors.$gray900;
+    }
+}
+
+.quantityInput {
+    padding: 10px 16px;
+    border: 0;
+    outline: 0;
+    width: 60px;
+    padding: 18px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-align: center;
+
+    color: colors.$gray100;
+    background-color: colors.$gray900;
+
+    &:hover {
+        background-color: colors.$gray800;
+        transition: 0.3s;
+    }
+}
