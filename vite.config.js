@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { svgSpritemap } from 'vite-plugin-svg-spritemap';
 import react from '@vitejs/plugin-react'
 import svgr from "vite-plugin-svgr"
 
@@ -6,6 +7,10 @@ import svgr from "vite-plugin-svgr"
 export default defineConfig({
     plugins: [
         react(),
-        svgr()
+        svgr(),
+        svgSpritemap({
+            pattern: 'src/assets/icons/**/*.svg',
+            prefix: 'icon',
+        })
     ],
 })
