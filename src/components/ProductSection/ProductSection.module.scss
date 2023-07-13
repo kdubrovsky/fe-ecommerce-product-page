@@ -1,6 +1,6 @@
 .product {
     display: grid;
-    grid-template-columns: 1fr minmax(440px, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(440px, 1fr);
     align-items: center;
     gap: 125px;
     padding: 90px 48px;

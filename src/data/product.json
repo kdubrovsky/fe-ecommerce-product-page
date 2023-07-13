@@ -9,19 +9,27 @@
     "images": [
         {
             "id": 0,
-            "src": "../assets/product/image-product-1.jpg"
+            "src": "/product/image-product-1.jpg",
+            "thumb": "/product/image-product-1-thumbnail.jpg",
+            "alt": "Fall Limited Edition Sneakers - Pair view"
         },
         {
             "id": 1,
-            "src": "../assets/product/image-product-2.jpg"
+            "src": "/product/image-product-2.jpg",
+            "thumb": "/product/image-product-2-thumbnail.jpg",
+            "alt": "Fall Limited Edition Sneakers - Pair view with stones"
         },
         {
             "id": 2,
-            "src": "../assets/product/image-product-3.jpg"
+            "src": "/product/image-product-3.jpg",
+            "thumb": "/product/image-product-3-thumbnail.jpg",
+            "alt": "Fall Limited Edition Sneakers - Single view with stones"
         },
         {
             "id": 3,
-            "src": "../assets/product/image-product-4.jpg"
+            "src": "/product/image-product-4.jpg",
+            "thumb": "/product/image-product-4-thumbnail.jpg",
+            "alt": "Fall Limited Edition Sneakers - Single view with stones"
         }
     ]
 }
