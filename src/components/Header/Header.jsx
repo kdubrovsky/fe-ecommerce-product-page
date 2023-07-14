@@ -8,7 +8,7 @@ import Container from "../Container/Container";
 
 import css from './Header.module.scss';
 
-export default function Header({ menuData, userData, cartProducts }) {
+export default function Header({ menuData, userData, cartProducts, productData }) {
     return (
         <header>
             <Container>
@@ -18,7 +18,7 @@ export default function Header({ menuData, userData, cartProducts }) {
                         <Menu menuData={menuData} />
                     </nav>
                     <div className={css.widgets}>
-                        <CartWidget cartProducts={cartProducts} />
+                        <CartWidget cartProducts={cartProducts} productData={productData} />
                         <UserAccountWidget userData={userData} />
                     </div>
                 </div>

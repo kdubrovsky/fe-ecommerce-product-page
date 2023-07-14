@@ -33,6 +33,7 @@ export default function App() {
                 menuData={menuData}
                 userData={userData}
                 cartProducts={cartProducts}
+                productData={productData}
             />
             <main>
                 <Container>

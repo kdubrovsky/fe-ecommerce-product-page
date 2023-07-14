@@ -1,15 +1,15 @@
 @use "../../scss/colors.scss";
 
 .cart {
-    &__link {
-        padding: 13px;
+    &__button {
         position: relative;
+        padding: 13px;
+        border: none;
+        background: none;
+        color: colors.$gray500;
 
-        &:link,
-        &:visited {
-            color: colors.$gray500;
-            transition: 0.3s;
-        }
+        transition: 0.3s;
+        cursor: pointer;
 
         &:hover {
             color: colors.$gray100;
