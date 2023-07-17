@@ -8,14 +8,16 @@ import Container from "./components/Container/Container";
 
 import menuData from "./data/menu.json";
 import userData from "./data/user.json";
-import productData from "./data/product.json";
+import productsData from "./data/products.json";
 
-const galleryData = productData.images;
+const currentProduct = productsData[0];
+const galleryData = currentProduct.images;
 
 
 export default function App() {
 
     const [cartProducts, setCartProducts] = useState({});
+    const [cartPopupVisibility, setCartPopupVisibility] = useState(false);
 
     const addProductToCart = (productId, value) =>
         setCartProducts(prev => (
@@ -25,7 +27,21 @@ export default function App() {
             }
         ));
 
-    console.log('Cart items:', cartProducts);
+    const removeProductFromCart = (productId) =>
+        setCartProducts(prev => {
+            const newCart = { ...prev };
+            delete newCart[productId];
+            return newCart;
+        });
+
+    const toggleCartPopup = (e) => {
+        e.stopPropagation();
+        setCartPopupVisibility(prev => !prev);
+    }
+
+    const closeCartPopup = () => {
+        setCartPopupVisibility(false);
+    }
 
     return (
         <>
@@ -33,7 +49,11 @@ export default function App() {
                 menuData={menuData}
                 userData={userData}
                 cartProducts={cartProducts}
-                productData={productData}
+                productsData={productsData}
+                cartPopupVisibility={cartPopupVisibility}
+                onCartPopupToggle={toggleCartPopup}
+                onCartClose={closeCartPopup}
+                onRemoveFromCart={removeProductFromCart}
             />
             <main>
                 <Container>
@@ -42,7 +62,7 @@ export default function App() {
                             galleryData={galleryData}
                         />
                         <ProductInformation
-                            productData={productData}
+                            currentProduct={currentProduct}
                             onAddToCart={addProductToCart}
                         />
                     </ProductSection>

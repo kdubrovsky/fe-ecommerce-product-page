@@ -1,6 +1,8 @@
 @use "../../scss/colors.scss";
 
 .cart {
+    position: relative;
+
     &__button {
         position: relative;
         padding: 13px;

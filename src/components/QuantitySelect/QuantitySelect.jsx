@@ -2,7 +2,7 @@ import Icon from '../Icon/Icon'
 
 import css from './QuantitySelect.module.scss'
 
-export default function QuantitySelect({ value, maxValue, onDecrementValue, onIncrementValue, onChangeValue }) {
+export default function QuantitySelect({ value, onDecrementValue, onIncrementValue, onChangeValue }) {
     return (
         <div className={css.quantitySelect}>
             <button className={css.changeQuantityButton} onClick={onDecrementValue}>

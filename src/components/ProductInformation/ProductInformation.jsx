@@ -4,7 +4,7 @@ import QuantitySelect from '../QuantitySelect/QuantitySelect';
 
 import css from './ProductInformation.module.scss';
 
-export default function ProductInformation({ productData, onAddToCart }) {
+export default function ProductInformation({ currentProduct, onAddToCart }) {
 
     const {
         id,
@@ -14,7 +14,7 @@ export default function ProductInformation({ productData, onAddToCart }) {
         price,
         discount,
         maxQuantity
-    } = productData;
+    } = currentProduct;
 
     const newPrice = Math.round(price * discount / 100).toFixed(2);
     const oldPrice = price.toFixed(2);

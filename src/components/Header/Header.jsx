@@ -8,7 +8,18 @@ import Container from "../Container/Container";
 
 import css from './Header.module.scss';
 
-export default function Header({ menuData, userData, cartProducts, productData }) {
+export default function Header(
+    {
+        menuData,
+        userData,
+        cartProducts,
+        productsData,
+        cartPopupVisibility,
+        onCartPopupToggle,
+        onCartClose,
+        onRemoveFromCart
+    }
+) {
     return (
         <header>
             <Container>
@@ -18,8 +29,17 @@ export default function Header({ menuData, userData, cartProducts, productData }
                         <Menu menuData={menuData} />
                     </nav>
                     <div className={css.widgets}>
-                        <CartWidget cartProducts={cartProducts} productData={productData} />
-                        <UserAccountWidget userData={userData} />
+                        <CartWidget
+                            cartProducts={cartProducts}
+                            productsData={productsData}
+                            cartPopupVisibility={cartPopupVisibility}
+                            onCartPopupToggle={onCartPopupToggle}
+                            onCartClose={onCartClose}
+                            onRemoveFromCart={onRemoveFromCart}
+                        />
+                        <UserAccountWidget
+                            userData={userData}
+                        />
                     </div>
                 </div>
             </Container>

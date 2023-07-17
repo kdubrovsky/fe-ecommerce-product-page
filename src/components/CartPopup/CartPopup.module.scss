@@ -1,0 +1,40 @@
+@use "../../scss/colors.scss";
+
+.popup {
+    position: absolute;
+    left: -152px;
+    top: 66px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: colors.$white;
+    box-shadow: colors.$popupShadow;
+}
+
+.title {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: colors.$gray100;
+    border-bottom: 1px solid colors.$gray800;
+}
+
+.content {
+    padding: 24px 24px 32px 24px;
+}
+
+.emptyCartMessage {
+    margin: 53px auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.625;
+    color: colors.$gray500;
+}
+
+.productList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
