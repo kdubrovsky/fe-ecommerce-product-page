@@ -10,7 +10,8 @@ export default function CartWidget(
         cartPopupVisibility,
         onCartPopupToggle,
         onCartClose,
-        onRemoveFromCart
+        onRemoveFromCart,
+        onCheckout
     }
 ) {
     const itemsCount = Object.keys(cartProducts).length;
@@ -31,6 +32,7 @@ export default function CartWidget(
                 opened={cartPopupVisibility}
                 onCartClose={onCartClose}
                 onRemoveFromCart={onRemoveFromCart}
+                onCheckout={onCheckout}
             />
         </div >
     )

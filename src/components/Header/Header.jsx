@@ -17,7 +17,8 @@ export default function Header(
         cartPopupVisibility,
         onCartPopupToggle,
         onCartClose,
-        onRemoveFromCart
+        onRemoveFromCart,
+        onCheckout
     }
 ) {
     return (
@@ -36,6 +37,7 @@ export default function Header(
                             onCartPopupToggle={onCartPopupToggle}
                             onCartClose={onCartClose}
                             onRemoveFromCart={onRemoveFromCart}
+                            onCheckout={onCheckout}
                         />
                         <UserAccountWidget
                             userData={userData}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AddToCartButton from '../AddToCartButton/AddToCartButton';
+import Button from '../Button/Button';
 import QuantitySelect from '../QuantitySelect/QuantitySelect';
 
 import css from './ProductInformation.module.scss';
@@ -73,7 +73,12 @@ export default function ProductInformation({ currentProduct, onAddToCart }) {
                     onIncrementValue={incrementValue}
                     onChangeValue={changeValue}
                 />
-                <AddToCartButton productId={id} onClickHandler={onAddToCartExtended} />
+                <Button
+                    iconName="cart"
+                    iconSize="24"
+                    onClickHandler={onAddToCartExtended}>
+                    Add to cart
+                </Button>
             </div>
         </div>
     );

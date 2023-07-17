@@ -2,10 +2,11 @@ import { useRef } from 'react';
 
 import useOutsideClick from '../../hooks/useOutsideClick';
 import CartProductItem from '../CartProductItem/CartProductItem';
+import Button from '../Button/Button';
 
 import css from './CartPopup.module.scss';
 
-export default function CartPopup({ cartProducts, productsData, opened, onCartClose, onRemoveFromCart }) {
+export default function CartPopup({ cartProducts, productsData, opened, onCartClose, onRemoveFromCart, onCheckout }) {
 
     const popupRef = useRef(null);
     useOutsideClick(popupRef, onCartClose, opened)
@@ -32,9 +33,15 @@ export default function CartPopup({ cartProducts, productsData, opened, onCartCl
                 )
 
         cartContent = (
-            <ul className={css.productList}>
-                {productItems}
-            </ul>
+            <>
+                <ul className={css.productList}>
+                    {productItems}
+                </ul>
+                <Button
+                    onClickHandler={onCheckout}>
+                    Checkout
+                </Button>
+            </>
         );
     }
 

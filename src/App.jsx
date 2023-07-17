@@ -43,6 +43,13 @@ export default function App() {
         setCartPopupVisibility(false);
     }
 
+    const checkOut = () => {
+        console.log('CHECKOUT ORDER:');
+        console.log('ITEMS:');
+        console.log(cartProducts);
+        setCartProducts({});
+    }
+
     return (
         <>
             <Header
@@ -54,6 +61,7 @@ export default function App() {
                 onCartPopupToggle={toggleCartPopup}
                 onCartClose={closeCartPopup}
                 onRemoveFromCart={removeProductFromCart}
+                onCheckout={checkOut}
             />
             <main>
                 <Container>
