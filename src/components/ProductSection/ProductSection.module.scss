@@ -1,9 +1,13 @@
 .product {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(449px, 1fr);
-    align-items: center;
-    gap: 121px;
-    padding: 46px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12%;
+    padding: 8% 4%;
 
-    min-height: calc(100vh - 113px);
+    @media (max-width: 1366px) {
+        gap: 5%;
+        padding: 4% 0%;
+    }
+
+    // min-height: calc(100vh - 113px);
 }

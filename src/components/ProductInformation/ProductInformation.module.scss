@@ -2,24 +2,30 @@
 
 .productInformation {
     padding: 2px;
+    padding-top: 16.5%;
+    max-width: 480px;
+
+    @media (max-width: 1366px) {
+        padding-top: 8%;
+    }
 }
 
 .brand {
-    font-size: 13px;
+    font-size: max(12px, 1vw);
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 24px;
+    margin-bottom: 1.84em;
 
     color: colors.$accent100;
 }
 
 .title {
-    font-size: 44px;
+    font-size: max(32px, 3.05vw);
     line-height: 1.091;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 0.73em;
 
     color: colors.$gray100;
 }
