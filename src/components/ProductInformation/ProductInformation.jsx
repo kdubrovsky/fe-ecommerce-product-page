@@ -51,9 +51,8 @@ export default function ProductInformation({ currentProduct, onAddToCart }) {
         setValue(1);
     }
 
-
     return (
-        <div>
+        <div className={css.productInformation}>
             <h2 className={css.brand}>{brand}</h2>
             <h1 className={css.title}>{title}</h1>
             <p className={css.description}>{description}</p>
@@ -75,7 +74,7 @@ export default function ProductInformation({ currentProduct, onAddToCart }) {
                 />
                 <Button
                     iconName="cart"
-                    iconSize="24"
+                    iconSize="20"
                     onClickHandler={onAddToCartExtended}>
                     Add to cart
                 </Button>

@@ -1,12 +1,16 @@
 @use "../../scss/colors.scss";
 
+.productInformation {
+    padding: 2px;
+}
+
 .brand {
     font-size: 13px;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 
     color: colors.$accent100;
 }
@@ -24,7 +28,7 @@
     font-size: 16px;
     line-height: 1.625;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 
     color: colors.$gray500;
 }
@@ -33,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 3px;
     margin-bottom: 32px;
 }
 
