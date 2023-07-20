@@ -14,6 +14,9 @@
     }
 
     li {
+
+        -webkit-user-select: none; /* Safari */
+        user-select: none;
         padding: 41px 0;
         border-bottom: 4px solid transparent;
         transition: 0.3s;

@@ -11,6 +11,7 @@ export default function QuantitySelect({ value, onDecrementValue, onIncrementVal
             <input
                 type="text"
                 name="quantity"
+                inputMode="numeric"
                 id="quantity"
                 value={value}
                 className={css.quantityInput}

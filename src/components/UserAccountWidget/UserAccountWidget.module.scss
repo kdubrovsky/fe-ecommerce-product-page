@@ -1,6 +1,9 @@
 @use "../../scss/colors.scss";
 
 .account {
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
+
     &__link {
         display: grid;
         place-items: center;
