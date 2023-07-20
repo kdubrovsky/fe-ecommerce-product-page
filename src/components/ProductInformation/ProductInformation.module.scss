@@ -8,17 +8,27 @@
     @media (max-width: 1366px) {
         padding-top: 8%;
     }
+
+    @media (max-width: 840px) {
+        padding: 24px;
+        max-width: unset;
+    }
 }
 
 .brand {
     font-size: max(12px, 1vw);
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.84em;
 
     color: colors.$accent100;
+
+    @media (max-width: 840px) {
+        letter-spacing: 1.85px;
+        margin-bottom: 1.333em;
+    }
 }
 
 .title {
@@ -28,6 +38,12 @@
     margin-bottom: 0.73em;
 
     color: colors.$gray100;
+
+    @media (max-width: 840px) {
+        font-size: 28px;
+        line-height: 1.143;
+        margin-bottom: 0.535em;
+    }
 }
 
 .description {
@@ -37,6 +53,13 @@
     margin-bottom: 28px;
 
     color: colors.$gray500;
+
+    @media (max-width: 840px) {
+        font-size: 15px;
+        line-height: 1.667;
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
 }
 
 .prices {
@@ -45,6 +68,14 @@
     align-items: flex-start;
     gap: 3px;
     margin-bottom: 32px;
+
+    @media (max-width: 840px) {
+        flex-direction: row;
+        align-items: center;
+        gap: unset;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
 }
 
 .actual {
@@ -74,7 +105,7 @@
     font-weight: 700;
 
     border-radius: 6px;
-    padding: 4px 8px;
+    padding: 4px 10px;
 
     color: colors.$accent100;
     background-color: colors.$accent900;
@@ -83,4 +114,7 @@
 .controls {
     display: flex;
     gap: 16px;
+    @media (max-width: 840px) {
+        flex-direction: column;        
+    }
 }

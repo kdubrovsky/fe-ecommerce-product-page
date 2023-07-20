@@ -4,3 +4,9 @@ body {
     background-color: white;
     font-weight: 400;
 }
+
+@media (max-width: 840px) {
+    main {
+        padding-top: 68px;
+    }
+}

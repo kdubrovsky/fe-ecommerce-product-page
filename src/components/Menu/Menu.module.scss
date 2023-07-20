@@ -9,6 +9,10 @@
     line-height: 1.733;
     height: 100%;
 
+    @media (max-width: 840px) {
+        display: none;
+    }
+
     li {
         padding: 41px 0;
         border-bottom: 4px solid transparent;
@@ -16,7 +20,6 @@
 
         &:hover {
             border-color: colors.$accent100;
-
         }
     }
 

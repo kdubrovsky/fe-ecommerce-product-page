@@ -1,10 +1,22 @@
 @use "../../scss/colors.scss";
 
+.header {
+
+    background-color: colors.$white;
+    @media (max-width: 840px) {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+}
 .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid colors.$gray800;
+    @media (max-width: 840px) {
+        padding: 16px 20px 19px 16px;
+    }
 }
 
 .navigation {
@@ -12,6 +24,10 @@
     justify-content: flex-start;
     align-items: center;
     gap: 56px;
+
+    @media (max-width: 840px) {
+        gap: 8px;
+    }
 }
 
 .widgets {
@@ -19,4 +35,8 @@
     justify-content: flex-end;
     align-items: center;
     gap: 32px;
+
+    @media (max-width: 840px) {
+        gap: 12px;
+    }
 }

@@ -73,6 +73,7 @@ export default function ProductInformation({ currentProduct, onAddToCart }) {
                     onChangeValue={changeValue}
                 />
                 <Button
+                    id="add"
                     iconName="cart"
                     iconSize="20"
                     onClickHandler={onAddToCartExtended}>

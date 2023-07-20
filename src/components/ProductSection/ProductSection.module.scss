@@ -9,5 +9,11 @@
         padding: 4% 0%;
     }
 
+    @media (max-width: 840px) {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        padding: 0;
+    }
+
     // min-height: calc(100vh - 113px);
 }

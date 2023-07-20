@@ -27,3 +27,14 @@
         background-color: colors.$accent100;
     }
 }
+:global {
+    @media (max-width: 840px) {
+        #add {
+            box-shadow: colors.$accentShadow;
+
+            &:hover {
+                background-color: colors.$accent100;
+            }
+        }
+    }
+}

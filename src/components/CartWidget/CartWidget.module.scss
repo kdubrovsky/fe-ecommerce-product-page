@@ -1,11 +1,19 @@
 @use "../../scss/colors.scss";
 
 .cart {
-    position: relative;
+    position: relative; // for popup positioning
+
+    @media (max-width: 480px) {
+        position: static;
+    }
 
     &__button {
         position: relative;
-        padding: 13px;
+        display: grid;
+        place-items: center;
+        width: 50px;
+        height: 50px;
+
         border: none;
         background: none;
         color: colors.$gray500;
@@ -13,13 +21,21 @@
         transition: 0.3s;
         cursor: pointer;
 
-        &:hover {
-            color: colors.$gray100;
+        @media (min-width: 840px) {
+            &:hover {
+                color: colors.$gray100;
+            }
+        }
+
+        @media (max-width: 840px) {
+            width: 32px;
+            height: 32px;
         }
     }
 
     &__counter {
         position: absolute;
+        min-width: 19px;
         top: 8px;
         right: 6px;
         font-size: 10px;
@@ -29,5 +45,10 @@
         color: colors.$white;
         padding: 2px 6px;
         border-radius: 7px;
+
+        @media (max-width: 840px) {
+            top: 0px;
+            right: -1px;
+        }
     }
 }

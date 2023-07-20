@@ -2,12 +2,31 @@
 
 .popup {
     position: absolute;
-    left: -152px;
-    top: 66px;
+    right: -158px;
+    top: 64px;
     width: 360px;
     border-radius: 10px;
     background-color: colors.$white;
     box-shadow: colors.$popupShadow;
+    z-index: 10;
+    min-width: 288px;
+
+    @media (max-width: 1366px) {
+        right: -80px;
+    }
+
+    @media (max-width: 840px) {
+        top: 60px;
+        right: -8px;
+    }
+
+    @media (max-width: 480px) {
+        position: absolute;
+        width: calc(100% - 16px);
+        top: 76px;
+        right: 0;
+        left: 8px;
+    }
 }
 
 .title {

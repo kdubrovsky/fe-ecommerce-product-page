@@ -1,0 +1,14 @@
+@use "../../scss/colors.scss";
+
+.burgerMenu {
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: colors.$gray500;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 840px) {
+        display: block;
+    }
+}

@@ -1,5 +1,6 @@
 import Logotype from "../Logotype/Logotype";
 import Menu from "../Menu/Menu";
+import BurgerMenuButton from "../BurgerMenuButton/BurgerMenuButton";
 import CartWidget from "../CartWidget/CartWidget";
 import UserAccountWidget from "../UserAccountWidget/UserAccountWidget";
 
@@ -22,10 +23,11 @@ export default function Header(
     }
 ) {
     return (
-        <header>
+        <header className={css.header}>
             <Container>
                 <div className={css.wrapper}>
                     <nav className={css.navigation}>
+                        <BurgerMenuButton isOpened={false} />
                         <Logotype />
                         <Menu menuData={menuData} />
                     </nav>

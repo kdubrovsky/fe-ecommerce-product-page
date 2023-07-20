@@ -2,9 +2,9 @@ import Icon from '../Icon/Icon'
 
 import css from './Button.module.scss'
 
-export default function AddToCartButton({ iconName, iconSize, children, onClickHandler }) {
+export default function Button({ id, iconName, iconSize, children, onClickHandler }) {
     return (
-        <button className={css.button} onClick={onClickHandler}>
+        <button id={id} className={css.button} onClick={onClickHandler}>
             {iconName && <Icon name={iconName} size={iconSize} />}
             {children}
         </button>
