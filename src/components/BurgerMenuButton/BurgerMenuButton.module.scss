@@ -7,8 +7,13 @@
     color: colors.$gray500;
     cursor: pointer;
     display: none;
+    transition: 0.3s;
+    z-index: 100;
 
     @media (max-width: 840px) {
         display: block;
+        &:hover {
+            color: colors.$gray100;
+        }
     }
 }
