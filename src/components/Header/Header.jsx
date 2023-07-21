@@ -36,7 +36,7 @@ export default function Header(
                         <BurgerMenuButton menuVisibility={menuVisibility} toggleMenu={toggleMenu} />
                         <Logotype />
                         <Menu menuData={menuData} />
-                        <MobileMenu menuData={menuData} menuVisibility={menuVisibility} />
+                        <MobileMenu menuData={menuData} menuVisibility={menuVisibility} toggleMenu={toggleMenu} />
                     </nav>
                     <div className={css.widgets}>
                         <CartWidget

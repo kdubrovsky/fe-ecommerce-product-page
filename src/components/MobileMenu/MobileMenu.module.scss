@@ -1,8 +1,5 @@
 @use "../../scss/colors.scss";
 
-.mobileMenu {
-}
-
 .menu {
     display: none;
     list-style: none;
@@ -19,9 +16,10 @@
         height: 100%;
 
         background-color: colors.$white;
-        transition: transform 1s;
-        will-change: transform;
         z-index: 50;
+
+        animation: toggleMenuAnimation 0.2s ease-out;
+        backface-visibility: hidden;
     }
 }
 
@@ -34,6 +32,7 @@
         width: 100%;
         height: 100vh;
         z-index: 40;
+        animation: fadeAnimation 0.2s ease-out;
     }
 }
 
@@ -51,5 +50,25 @@
 
     &:hover {
         color: colors.$accent100;
+    }
+}
+
+@keyframes toggleMenuAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

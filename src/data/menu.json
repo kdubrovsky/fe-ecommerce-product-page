@@ -2,26 +2,26 @@
     {
         "id": 0,
         "title": "Collections",
-        "url": "/collections"
+        "url": "#"
     },
     {
         "id": 1,
         "title": "Men",
-        "url": "/catalog/men"
+        "url": "#"
     },
     {
         "id": 2,
         "title": "Women",
-        "url": "/catalog/women"
+        "url": "#"
     },
     {
         "id": 3,
         "title": "About",
-        "url": "/about"
+        "url": "#"
     },
     {
         "id": 4,
         "title": "Contact",
-        "url": "/contact"
+        "url": "#"
     }
 ]

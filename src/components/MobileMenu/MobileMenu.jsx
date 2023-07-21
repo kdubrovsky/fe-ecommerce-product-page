@@ -1,6 +1,6 @@
 import css from "./MobileMenu.module.scss";
 
-export default function MobileMenu({ menuData, menuVisibility }) {
+export default function MobileMenu({ menuData, menuVisibility, toggleMenu }) {
 
     const menuItems = menuData.map(item => {
         return (
@@ -12,7 +12,7 @@ export default function MobileMenu({ menuData, menuVisibility }) {
 
     if (menuVisibility) return (
         <>
-            <div className={css.voile}>
+            <div className={css.voile} onClick={toggleMenu}>
             </div>
             <ul className={css.menu}>
                 {menuItems}
