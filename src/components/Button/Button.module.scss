@@ -10,6 +10,8 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
 
     font-size: 16px;
     font-weight: 700;

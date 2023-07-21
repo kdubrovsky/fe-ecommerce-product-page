@@ -6,7 +6,7 @@ export default function QuantitySelect({ value, onDecrementValue, onIncrementVal
     return (
         <div className={css.quantitySelect}>
             <button className={css.changeQuantityButton} onClick={onDecrementValue}>
-                <Icon name="minus" size="24" />
+                <Icon name="minus" size="24" />-
             </button>
             <input
                 type="text"
@@ -17,7 +17,7 @@ export default function QuantitySelect({ value, onDecrementValue, onIncrementVal
                 className={css.quantityInput}
                 onChange={onChangeValue} />
             <button className={css.changeQuantityButton} onClick={onIncrementValue}>
-                <Icon name="plus" size="24" />
+                <Icon name="plus" size="24" />+
             </button>
         </div>
     )

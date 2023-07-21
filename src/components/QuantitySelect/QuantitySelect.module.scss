@@ -17,8 +17,11 @@
     color: colors.$accent100;
     background-color: colors.$gray900;
     padding: 16px 12px;
+    font-size: 0;
     border: none;
     cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
 
     &:hover {
         transition: 0.3s;

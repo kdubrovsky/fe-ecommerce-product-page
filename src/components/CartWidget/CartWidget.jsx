@@ -22,8 +22,8 @@ export default function CartWidget(
 
     return (
         <div className={css.cart}>
-            <button className={css.cart__button} href="/cart" onClick={onCartPopupToggle}>
-                <Icon name="cart" size="24" />
+            <button className={css.cart__button} onClick={onCartPopupToggle}>
+                <Icon name="cart" size="24" /><span className='visually-hidden'>Cart</span>
                 {itemsCounter}
             </button>
             <CartPopup
