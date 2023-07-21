@@ -8,6 +8,7 @@ export default function QuantitySelect({ value, onDecrementValue, onIncrementVal
             <button className={css.changeQuantityButton} onClick={onDecrementValue}>
                 <Icon name="minus" size="24" />-
             </button>
+            <label htmlFor='quantity' className='visually-hidden'>Quantity</label>
             <input
                 type="text"
                 name="quantity"
